@@ -427,6 +427,8 @@ GameObject:
   - component: {fileID: 2596273315149254579}
   - component: {fileID: 2596273316607809002}
   - component: {fileID: 8835157588375739498}
+  - component: {fileID: 5496078732941691896}
+  - component: {fileID: -8084548417052376349}
   m_Layer: 0
   m_Name: SeaBiscuit
   m_TagString: Untagged
@@ -487,7 +489,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5d9dfdca1338564aba64824139171de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 45
+  speed: 30
 --- !u!114 &8835157588375739498
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -498,6 +500,31 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d4b71c3640787a5489a457e1aed565e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &5496078732941691896
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2596273315158713767}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.789476, y: 37.24121, z: 44.392456}
+  m_Center: {x: 0.4153508, y: 18.120594, z: 3.854611}
+--- !u!114 &-8084548417052376349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2596273315158713767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18e83fb501fd4b049a55dc823ea206ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2596273315158719825

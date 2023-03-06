@@ -43,6 +43,8 @@ GameObject:
   - component: {fileID: 4735487026822686144}
   - component: {fileID: 4735487025302043192}
   - component: {fileID: -4855016667059405807}
+  - component: {fileID: 5399388621475925582}
+  - component: {fileID: 6308942215363281338}
   m_Layer: 0
   m_Name: ChickenLittle
   m_TagString: Untagged
@@ -99,7 +101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5d9dfdca1338564aba64824139171de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 8
 --- !u!114 &-4855016667059405807
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -110,6 +112,31 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d4b71c3640787a5489a457e1aed565e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &5399388621475925582
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4735487026829991030}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.766267, y: 6.1238947, z: 7.724783}
+  m_Center: {x: 0, y: 3.0341253, z: 0.08448494}
+--- !u!114 &6308942215363281338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4735487026829991030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18e83fb501fd4b049a55dc823ea206ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &4735487026829999098
