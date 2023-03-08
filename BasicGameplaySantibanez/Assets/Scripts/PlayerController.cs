@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
     public float verticalInput;
     public float speed = 10.0f;
     public float xRange = 20.0f;
-    public float maxZRange = 16.0f;
+    public float maxZRange = 8.0f;
     public float minZRange = -1f;
 
     public GameObject projectilePrefab;
@@ -34,10 +34,10 @@ public class PlayerController : MonoBehaviour
 
         if (transform.position.z < minZRange)
         {
-            transform.position = new Vector3(transform.position.y, transform.position.y, minZRange);
+            transform.position = new Vector3(transform.position.x, transform.position.y, minZRange);
         }
 
-        if (transform.position.x > maxZRange)
+        if (transform.position.z > maxZRange)
         {
             transform.position = new Vector3(transform.position.x, transform.position.y, maxZRange);
         }
@@ -56,4 +56,5 @@ public class PlayerController : MonoBehaviour
         }
 
     }
+
 }
