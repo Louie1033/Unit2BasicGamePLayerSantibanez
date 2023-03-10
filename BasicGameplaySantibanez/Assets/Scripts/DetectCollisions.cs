@@ -6,13 +6,12 @@ using UnityEngine.TextCore.LowLevel;
 
 public class DetectCollisions : MonoBehaviour
 {
+    private GameManager gameManager;
 
-    private int lives = 3;
-    private int score = 0;
     // Start is called before the first frame update
     void Start()
     {
-
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     // Update is called once per frame
@@ -24,16 +23,16 @@ public class DetectCollisions : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            lives--;
-            Debug.Log("Lives Left: " + lives);
-            Debug.Log("Game Over!");
+            gameManager.Lives(-1);
             
             Destroy(gameObject);
         }
         else
         {
+
             Destroy(gameObject);
             Destroy(other.gameObject);
+            gameManager.AnimalFeed(1);
         }
     }
 }
