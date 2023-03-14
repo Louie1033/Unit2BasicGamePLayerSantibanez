@@ -29,6 +29,7 @@ public class GameManager : MonoBehaviour
         {
             score = 0;
         }
+         scoreText.text = "Score " + score.ToString();
             Debug.Log("Score = " + score);
     }
     public void Lives(int value)
@@ -40,6 +41,7 @@ public class GameManager : MonoBehaviour
             Debug.Log("Game Over!");
             lives = 0;
         }
+        livesText.text = "Lives " + score.ToString();
         Debug.Log("Lives = " + lives);
     }
 }
