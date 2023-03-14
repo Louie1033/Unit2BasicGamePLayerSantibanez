@@ -7,6 +7,7 @@ using UnityEngine.TextCore.LowLevel;
 public class DetectCollisions : MonoBehaviour
 {
     private GameManager gameManager;
+    public int scoreChange = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +25,7 @@ public class DetectCollisions : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             gameManager.Lives(-1);
+            gameManager.AnimalFeed(-10);
             
             Destroy(gameObject);
         }
@@ -32,7 +34,7 @@ public class DetectCollisions : MonoBehaviour
 
             Destroy(gameObject);
             Destroy(other.gameObject);
-            gameManager.AnimalFeed(1);
+            gameManager.AnimalFeed(scoreChange);
         }
     }
 }
